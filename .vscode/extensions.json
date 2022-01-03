@@ -4,6 +4,8 @@
         "xabikos.javascriptsnippets",
         "esbenp.prettier-vscode",
         "skyran.js-jsx-snippets",
-        "blanu.vscode-styled-jsx"
+        "blanu.vscode-styled-jsx",
+        "joy-yu.css-snippets",
+        "ecmel.vscode-html-css"
     ]
 }
