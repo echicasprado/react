@@ -58,14 +58,14 @@ self.addEventListener("activate",(e)=>{
 */
 self.addEventListener("fetch",(e)=>{
     //Responder cuando se haga match el request
-    e.respondWith(()=>{
+    e.respondWith(
         caches.match(e.request).then((res)=>{
-            //Si existe la repuesta en cache que la retorne
+            //Si no existe la repuesta en cache, que la agregue al cache
             if(res){
                 return res;
             }
             //Si no existe la repuesta en cache, que la agregue al cache
             return fetch(e.request);
-        });
-    })
+        })
+    );
 });
